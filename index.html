@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Date Test</title>
+</head>
+<body>
+    <h1>JavaScript Name and Date Test</h1>
+    <p id="name"></p>
+    <p id="bday"></p>
+    <script>
+        let firstname = "Miles";
+        let middlename = "Johan";
+        let lastname = "Bailey-Brændgaard";
+        let age = 22;
+        let today = new Date();
+        let currentyear = today.getFullYear();
+        let birthdate = currentyear - age;
+
+        document.getElementById("name").innerHTML = "Hello, my name is " + " " + firstname + " " + middlename + " " + lastname + ".";
+        document.getElementById("bday").innerHTML = "I was born in " + birthdate + ".";
+    </script>
+</body>
+</html>
